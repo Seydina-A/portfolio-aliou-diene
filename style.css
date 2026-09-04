@@ -48,6 +48,12 @@ a { text-decoration: none; color: inherit; }
   font-weight: 800;
   color: var(--navy);
 }
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .logo span { color: var(--blue2); }
 
 .nav-links {
