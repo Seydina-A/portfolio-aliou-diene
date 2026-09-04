@@ -144,7 +144,13 @@ a { text-decoration: none; color: inherit; }
   color: var(--muted);
 }
 
-.hero-photo { position: relative; display: flex; justify-content: center; }
+.hero-photo { 
+  position: relative; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-photo img {
   width: min(360px, 85vw);
   aspect-ratio: 1/1;
@@ -155,6 +161,7 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 25px 60px rgba(7,26,65,.18);
   position: relative;
   z-index: 2;
+}
 }
 .photo-ring {
   position: absolute;
