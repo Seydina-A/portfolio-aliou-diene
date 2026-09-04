@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio d'Aliou Diene — Réseau & Système Informatique">
+  <title>Aliou Diene | Réseau & Système Informatique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#accueil">AD<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#travaux">Travaux</a>
+        <a href="#formation">Formation</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">DISPONIBLE POUR STAGE / EMPLOI</p>
+        <p class="intro-label">Bonjour, je suis</p>
+        <h1>Aliou <span>Diene</span></h1>
+        <h2>Spécialiste en réseaux &amp; système informatique</h2>
+        <p class="hero-text">
+          Passionné par les infrastructures réseau et les télécommunications,
+          je conçois et déploie des solutions robustes. Étudiant en Licence 3
+          Réseau &amp; Système Informatique à l'ISI de Keur Massar.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Me contacter</a>
+          <a class="btn secondary" href="#travaux">Voir mes compétences</a>
+        </div>
+        <div class="quick-info">
+          <span>📍 Keur Massar, Dakar — Sénégal</span>
+          <span>🌐 Français · Anglais</span>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-ring"></div>
+        <img src="images/aliou-diene.jpg" alt="Aliou Diene">
+        <div class="photo-badge">
+          <strong>Licence 3</strong>
+          <span>Réseau &amp; Système</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div><strong>Asterisk</strong><span>Téléphonie IP</span></div>
+        <div><strong>TCP/IP</strong><span>Réseaux avancés</span></div>
+        <div><strong>DevOps</strong><span>Linux · VirtualBox</span></div>
+        <div><strong>Python</strong><span>Programmation</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="apropos">
+      <div class="container two-col">
+        <div>
+          <p class="section-tag">01 — À PROPOS</p>
+          <h2 class="section-title">Construire des infrastructures <span>fiables.</span></h2>
+        </div>
+        <div class="about-text">
+          <p>
+            Étudiant en Licence 3 Réseau et Système Informatique à l'ISI de Keur Massar,
+            je cumule une solide formation académique et des expériences pratiques variées.
+          </p>
+          <p>
+            Spécialisé dans la téléphonie IP, l'administration réseaux et les systèmes Linux,
+            j'ai acquis une expertise en infrastructure Asterisk, configuration DHCP/DNS/VLAN
+            et gestion de serveurs.
+          </p>
+          <p>
+            Rigoureux, autonome et passionné, je m'adapte rapidement aux nouveaux
+            environnements technologiques et recherche une opportunité stimulante pour
+            mettre mes compétences au service d'une équipe dynamique.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="competences">
+      <div class="container">
+        <p class="section-tag light">02 — COMPÉTENCES</p>
+        <h2 class="section-title light-title">Maîtrise <span>technique</span></h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">☎</div>
+            <h3>Télécommunications</h3>
+            <p>Asterisk · SIP · Softphones · Téléphonie IP · VoIP · Clients · Serveurs vocaux</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">⌘</div>
+            <h3>Réseaux &amp; systèmes</h3>
+            <p>TCP/IP · DHCP · DNS · VLAN · Routage · Cisco · Linux/Ubuntu · Windows</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Programmation</h3>
+            <p>Python · JavaScript · HTML/CSS · SQL</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">▣</div>
+            <h3>Outils &amp; administration</h3>
+            <p>Administration serveurs · Configuration infrastructure · Gestion de projets · VirtualBox</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="travaux">
+      <div class="container">
+        <p class="section-tag">03 — TRAVAUX TECHNIQUES</p>
+        <h2 class="section-title">Domaines sur lesquels je <span>travaille</span></h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <div class="project-icon">☎</div>
+            <h3>Infrastructure Asterisk</h3>
+            <p>Déploiement et configuration d'environnements de téléphonie IP basés sur Asterisk, SIP et softphones.</p>
+            <div class="tags"><span>Asterisk</span><span>SIP</span><span>VoIP</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <div class="project-icon">⌁</div>
+            <h3>Services réseau</h3>
+            <p>Configuration et administration de services réseau : DHCP, DNS, TCP/IP et segmentation VLAN.</p>
+            <div class="tags"><span>DHCP</span><span>DNS</span><span>VLAN</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <div class="project-icon">◇</div>
+            <h3>Réseaux Cisco</h3>
+            <p>Travail sur les architectures réseaux, les routeurs, les switches et les problématiques de routage.</p>
+            <div class="tags"><span>Cisco</span><span>Routage</span><span>TCP/IP</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">04</div>
+            <div class="project-icon">$_</div>
+            <h3>Systèmes &amp; virtualisation</h3>
+            <p>Administration d'environnements Linux/Ubuntu et utilisation de la virtualisation avec VirtualBox.</p>
+            <div class="tags"><span>Linux</span><span>Ubuntu</span><span>VirtualBox</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="formation">
+      <div class="container">
+        <p class="section-tag">04 — PARCOURS</p>
+        <h2 class="section-title">Formation <span>académique</span></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="date">EN COURS</span>
+              <h3>Licence 3 — Réseau et Système Informatique</h3>
+              <p class="school">ISI de Keur Massar, Dakar</p>
+              <p>Spécialisation : Infrastructure Asterisk · Configuration réseaux · Administration systèmes · Programmation</p>
+            </div>
+          </div>
+        </div>
+        <div class="strengths">
+          <h3>Points forts</h3>
+          <div class="strength-list">
+            <span>✓ Infrastructure Asterisk &amp; Téléphonie IP</span>
+            <span>✓ Réseaux avancés (TCP/IP, DHCP, DNS, VLAN, routage)</span>
+            <span>✓ Administration Cisco (routeurs, switches)</span>
+            <span>✓ Systèmes Linux/Ubuntu &amp; Windows</span>
+            <span>✓ Programmation Python, JavaScript, HTML/CSS</span>
+            <span>✓ Bases de données SQL</span>
+            <span>✓ Communication et travail en équipe</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section" id="contact">
+      <div class="container contact-box">
+        <div>
+          <p class="section-tag">05 — CONTACT</p>
+          <h2>Un projet, un stage ou une opportunité ?</h2>
+          <p>Je suis disponible pour échanger sur vos besoins et contribuer à vos projets.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:alioudiene233@gmail.com">✉ alioudiene233@gmail.com</a>
+          <a href="tel:+221770749959">☎ +221 77 074 99 59</a>
+          <a href="https://www.linkedin.com/in/aliou-diene-008487395" target="_blank" rel="noopener">in LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>© 2026 Aliou Diene</span>
+      <span>Réseau &amp; Système Informatique</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
