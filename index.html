@@ -14,7 +14,14 @@
   <header class="header">
     <nav class="nav container">
       <a class="logo" href="#accueil">AD<span>.</span></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+      
+      <!-- Bouton Burger animé -->
+      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
       <div class="nav-links" id="navLinks">
         <a href="#accueil">Accueil</a>
         <a href="#apropos">À propos</a>
@@ -28,31 +35,32 @@
 
   <main>
     <section class="hero section" id="accueil">
-      <div class="hero-content">
-        <p class="eyebrow">DISPONIBLE POUR STAGE / EMPLOI</p>
-        <p class="intro-label">Bonjour, je suis</p>
-        <h1>Aliou <span>Diene</span></h1>
-        <h2>Spécialiste en réseaux &amp; système informatique</h2>
-        <p class="hero-text">
-          Passionné par les infrastructures réseau et les télécommunications,
-          je conçois et déploie des solutions robustes. Étudiant en Licence 3
-          Réseau &amp; Système Informatique à l'ISI de Keur Massar.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#contact">Me contacter</a>
-          <a class="btn secondary" href="#travaux">Voir mes compétences</a>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">DISPONIBLE POUR STAGE / EMPLOI</p>
+          <p class="intro-label">Bonjour, je suis</p>
+          <h1>Aliou <span>Diene</span></h1>
+          <h2>Spécialiste en réseaux &amp; système informatique</h2>
+          <p class="hero-text">
+            Passionné par les infrastructures réseau et les télécommunications,
+            je conçois et déploie des solutions robustes. Étudiant en Licence 3
+            Réseau &amp; Système Informatique à l'ISI de Keur Massar.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Me contacter</a>
+            <a class="btn secondary" href="#travaux">Voir mes compétences</a>
+          </div>
+          <div class="quick-info">
+            <span>📍 Keur Massar, Dakar — Sénégal</span>
+            <span>🌐 Français · Anglais</span>
+          </div>
         </div>
-        <div class="quick-info">
-          <span>📍 Keur Massar, Dakar — Sénégal</span>
-          <span>🌐 Français · Anglais</span>
-        </div>
-      </div>
-      <div class="hero-photo">
-       
-        <img src="aliou-diene.jpg" alt="Aliou Diene 1" class="hero-img-1">
-        <div class="photo-badge">
-          <strong>Licence 3</strong>
-          <span>Réseau &amp; Système</span>
+        <div class="hero-photo">
+          <img src="aliou-diene.jpg" alt="Aliou Diene" class="hero-img-1">
+          <div class="photo-badge">
+            <strong>Licence 3</strong>
+            <span>Réseau &amp; Système</span>
+          </div>
         </div>
       </div>
     </section>
@@ -210,6 +218,22 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    const links = document.querySelectorAll('.nav-links a');
+
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
